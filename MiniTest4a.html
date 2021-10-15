@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4a</title>
+</head>
+<body>
+<label for="inputA">Nhập độ dài cạnh vuông: <br><input type="number" id="inputA"></label>
+<input type="button" value="Caculate" onclick="caculate()">
+<p id="output"></p>
+</body>
+<script>
+function caculate(){
+    let sideA=parseFloat(document.getElementById("inputA").value);
+    let areaOfSquare=sideA**2;
+    let perimeterOfSquare=4*sideA;
+    document.getElementById("output").innerHTML="Chu vi hình vuông ="+" "+ perimeterOfSquare+"<br>" +
+                                                 "Diện tích hình vuông"+" "+ areaOfSquare;
+}
+</script>
+</html>

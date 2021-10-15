@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4b</title>
+</head>
+<body>
+<label for="inputA">Nhập  a: <br><input type="number" id="inputA"></label> <br>
+<label for="inputA">Nhập  b: <br><input type="number" id="inputB"></label> <br>
+<input type="button" value="Caculate" onclick="caculate()">
+<p id="output"></p>
+</body>
+<script>
+  function caculate(){
+    let inputA=parseFloat(document.getElementById("inputA").value);
+    let inputB=parseFloat(document.getElementById("inputB").value);
+    let output1=inputA**2;
+    let output2=inputA**inputB;
+    document.getElementById("output").innerHTML="a^2"+" "+ output1+"<br>" +
+            "a^b"+" "+ output2;
+  }
+</script>
+</html>
