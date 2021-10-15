@@ -5,13 +5,15 @@
     <title>Câu4d</title>
 </head>
 <body>
-<label for="inputA">Nhập a: <br><input type="text" id="inputA"></label> <br>
+<label for="inputA">Nhập năm: <br><input type="text" id="inputA"></label> <br>
 <input type="button" value="Caculate" onclick="caculate()">
 <p id="output"></p>
 </body>
 <script>
     function caculate(){
-
+            let year=parseInt(document.getElementById("inputA").value);
+            let century= parseInt(year/100+1) ;
+            document.getElementById("output").innerHTML= "Thế kỷ"+ century;
     }
 </script>
 </html>
