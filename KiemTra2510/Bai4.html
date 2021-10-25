@@ -10,10 +10,10 @@
 <script>
     let count = 0;
     for (let i = 0; i <= 100; i++) {
-        if ((i % 3 === 0) && (i % 7 === 0)) {
+        if ((i % 3 === 0) || (i % 7 === 0)) {
             count++;
         }
     }
-    document.write('So chu so chia het cho 3 va 7:' + ' ' + count);
+    document.write('So chu so chia het cho 3 hoac 7:' + ' ' + count);
 </script>
 </html>
